@@ -23,7 +23,13 @@ msg_error() { echo -e "${RED}[ERROR]${NC} $*"; }
 msg_warn() { echo -e "${YELLOW}[WARN]${NC} $*"; }
 
 # Repository URL for bot files
-REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/YOUR_REPO/trading-bot-files/main}"
+REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/loreformi/trading-bot-files/main}"
+curl -fsSL "$REPO_URL/data_loader.py" -o src/data_loader.py
+curl -fsSL "$REPO_URL/feature_engineering.py" -o src/feature_engineering.py
+curl -fsSL "$REPO_URL/environment.py" -o src/environment.py
+curl -fsSL "$REPO_URL/train.py" -o scripts/train.py
+curl -fsSL "$REPO_URL/config.yaml" -o config/config.yaml
+curl -fsSL "$REPO_URL/requirements.txt" -o requirements.txt
 
 # ASCII Art Header
 clear
