@@ -8,7 +8,7 @@
 # =============================================================================
 
 # Source build functions
-source <(curl -fsSL https://raw.githubusercontent.com/YOUR_REPO/trading-bot-proxmox/main/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/loreformi/trading-bot-proxmox/main/build.func)
 
 # Application information
 APP="Gold-VIX Trading Bot"
