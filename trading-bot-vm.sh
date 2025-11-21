@@ -35,7 +35,7 @@ IMAGE_URL="https://cloud-images.ubuntu.com/releases/${UBUNTU_VERSION}/release/ub
 IMAGE_FILE="/var/lib/vz/template/iso/ubuntu-${UBUNTU_VERSION}-cloudimg.img"
 
 # Repository URL for internal setup script
-REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/YOUR_REPO/trading-bot-proxmox/main}"
+REPO_URL="${REPO_URL:-https://raw.githubusercontent.com/loreformi/trading-bot-proxmox/main}"
 
 # =============================================================================
 # Main Installation Function
